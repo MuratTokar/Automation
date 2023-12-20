@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+    <test name="Test1">
+        <parameter name="testName" value="Murat"/>
+        <parameter name="count" value="5"/>
+        <classes>
+            <class name="day023_mrtt.xml3.TestCount">
+               <methods>
+                   <include name="count"/>
+               </methods> 
+            </class>
+        </classes>
+    </test>
+    <test name="Test2">
+        <parameter name="testName" value="Tokar"/>
+        <parameter name="sum" value="6"/>
+        <classes>
+            <class name="day023_mrtt.xml3.TestCount">
+                <methods>
+                    <include name="sum"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test3">
+        <parameter name="testName" value="hepsi"/>
+        <parameter name="count" value="10"/>
+        <parameter name="sum" value="10"/>
+        <classes>
+            <class name="day023_mrtt.xml3.TestCount"/>
+        </classes>
+    </test>
+   
+</suite>

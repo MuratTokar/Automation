@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--suite-->
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="test1">
+        <classes>
+            <class name="day023_mrtt.xml1.Test1">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/> <!-- include yi exclude de yapabilirim.Yani run edilmiyecek-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

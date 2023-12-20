@@ -1,0 +1,39 @@
+
+
+Gherkin
+Featureler yazilir
+Scenario:
+Bunlar senaryo icinde kullanilan keyword lardir
+Given :ön sartlar yazilir
+When :Action,text requirement
+Then:expected condition,assertion
+And:
+*
+
+Background:
+Sceranio Outline:
+
+
+
+
+
+
+Feature:
+Scenario: login functionility
+Given user on homepage
+When user fill the login form
+And user clicks the login button
+Then login should be successful
+
+Senario:menu functonility
+ Given user logged in
+ When user clicks the Admin link
+ Then admin page should be visible
+
+
+ Scenario:menu functonility
+ Given user on homepage
+ And user fills the login form
+ And user clicks the login button
+ When user clicks the Admin link
+ Then admin page should be visible

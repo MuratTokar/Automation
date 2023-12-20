@@ -1,0 +1,6 @@
+
+
+By class i selenium un locator class idir.Element degildir.Web sayfasindaki elementi bulmak icin kullanilir
+WebElement Selenium un By locatorlar araciligiyla buldugu objelerdir(Elementlerdir)
+WebElement element=driver.fin dElement(By);
+List<WebElement> elements=driver.findElements(By);

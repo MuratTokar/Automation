@@ -1,0 +1,6 @@
+1.https://www.saucedemo.com/ sitesine git
+2.login ol
+3."Sauce Labs Bike Light" urununu sepete ekle
+4.urunun eklendigini assert et
+5.sepete git
+6.sepette ""Sauce Labs Bike Light"" urununun oldugunu assert et

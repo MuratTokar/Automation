@@ -1,0 +1,1 @@
+POJO:getter ve setter leri olan basit java classlaridir

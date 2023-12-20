@@ -1,0 +1,29 @@
+TestNG ,JUnit ve NUnit test frameworklerinin zayif yönlerinden etkilenmis ve bunlarin ortadan  kaldirilmasi amaclanarak
+Cedric Beust tarafindan gelistirlmis
+TestNG kullanilarak uygun bir rapor olusturulabilir ve rapor sonucunda kac test senaryosunun basarili ve basarisiz oldugunu görebiliriz
+Testlerin organizasyonu icin kullanacagimiz freemwork tur
+
+TestNG Avantajli özellikleri;
+-Annotationlar
+-Testlerin ilgili Thread lerde kosabilmesi
+-Multi Thread (Coklu akis)test destegi
+-@DataProvider notasyonu sayesinde Data Drivan Test;
+-Esnek test konfigürasyonu,
+
+
+
+
+
+
+
+@BeforeSuite                     // Herseyden önce baslayan metot
+    @BeforeTest                  // Bir Thread da yürütülen tesler grubu
+       @BeforeGroups             // TestNG grouplar olusturulabilir,bu grouplar öncesi
+          @BeforeClass           // O class öncesi
+             @BeforMethod        // @Test annotation  i olan metotlar
+
+             @AfterMethod
+          @AfterClass
+       @AfterGroups
+    @AfterTest
+@AfterSuite                     //Herseyden sonra calisan metot

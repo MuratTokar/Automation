@@ -1,0 +1,49 @@
+By.Id              :<a id='id'>google icin tikla</a>                      :By.id("id1")
+By.classname       :<a class ='class'>google icin tikla</a>               :By.className("class1")
+By.linkText        :<a id='id1' class='class1'>google icin tikla</a>      :By.linkText("google icin tikla")
+By.partialLinkText :<a id='id1' class='class1'>google icin tikla</a>      :By.partiallinkText("google")
+By.id tagName      :<a id='id1' class='class1'>google icin tikla</a>      :By.tagName("a")
+By.cssSelector     :By.cssSelector("*")
+By.xpath           :By.xpath("//*")
+
+xpath=
+absolute path:/  html sayfaninn basinda aramaya baslar tumune bakar
+relative path:// sayfaniin herhangi bir yerinden baslar
+
+cssSelector                                                xpath
+--------------                                      ----------------------------
+*-hizlidir                                         csss gore yavastir
+*-ileri hareket eder                                ileri ve geri hareket eder
+* #== id                                              ---------------
+* .== class                                           .= aktif elemnt demek
+
+
+
+ Aciklama                            cssSelector                                xpath
+--------------------               --------------------                    --------------------------
+1-Tüm elementleri                        *                                    //*
+2-Bir element icin                       E(yani elent adi)                    //E
+3-id attr.olan E elementleri             E[id] id si olan E elemntleri        //E[@id]
+4-A attr.olan E                          E[A]                                 //E[@A]
+5-A='a' attr.olan E elementleri          E[A='a']                             //E[@A'a']
+6-id='id1'(id si 1 olan)olan E element   E[A='id1'] veya E#id1                //E[@A'id1']
+7-id='id1' olan tum elementleri          [A='id1'] veya E#id1                 //*[@A'id1']
+8-class='c1' olan E elementleri          E[class='c1']=  .c1 .c1 c1 classlari //E[@class='c1']
+9- clss                                 .navbar-toggler.navbar-toggler-right   //*[@class='navbar-toggler navbar toggler-rght
+                                         bu class yada  bu class demek nokta   burda iki class birlikte aranir
+10-E1 elementinin altinda olan E2
+ child(ilk baglisi)                      E1 >E2  hemen altindaki               //E1/E2  hmn altindaki
+ altindakiler                            E1 E2 altindakilerin hepsi            //E1//E2
+
+ 11-texti "ali"olan E bulma:           ------------------                       //E[text()'ali']
+ 12-text ile E bulma:                  ------------------                       //E[text()]
+ 13-texti "ali"iceren E bulma:         ------------------                       //E[contains(text(),'ali')]
+ 14-E elemntlerinde 2.sirada olanlar                                            //E[2]
+ 15-E elemntlerden bastan 2.sirada olan -----------------                       (//E)[2]
+ 16-E elementinin Parent i olan E2      -----------------                        E//parent::E2
+ 17-E elementinin ancestor(atalari) i olan E2 -----------                        E//ancestor::E2
+
+
+  //div[@class='card mt-4 top-card' and.//h5[text()='Elements']]
+  xpath=  //tagName[@attribute='value']
+  cssSelector= tagName[attribute='value']

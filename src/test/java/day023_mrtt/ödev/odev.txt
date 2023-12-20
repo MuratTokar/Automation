@@ -1,0 +1,14 @@
+1-https://demoblaze.com
+2-contact a tiklayin
+3-Acilan formda gerekli bilgileri doldurun
+4-submit edin
+5-popup in ciktigindan ve "Thanks for thr message" yazisinin oldugundan emin olun ve driver i kapatin
+
+Yapilacaklar:
+xml ile run edilecek
+@BeforeTest xml den browser parametresi alacak
+ve icinde alternatif driverlar tanimlanabilecek
+3 tane test tanimlanacak,chrome,edge,firefox paralel calisacak
+form verileri xml den gönderilecek
+Her browser da contact name ve email ayni ,message farkli olacak
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--Suite:
+verbose:aciklama detay seviyeini verir.0 ile 10 arasindadir
+paralel:nelerin paralel yurutulecegini yazariz
+thread count:paralel calisacak thread sayisi,1 yazarsak pespese olur -->
+<suite name="MySuite" verbose="10" parallel="tests" thread-count="5">
+    <test name="Test1">
+        <classes>
+            <class name="day023_mrtt.xml1.Test1"/>
+        </classes>
+    </test>
+
+    <test name="Test2">
+        <classes>
+            <class name="day023_mrtt.xml1.Test2"/>
+        </classes>
+    </test>
+</suite>
